@@ -1,0 +1,79 @@
+table thead tr{
+    background-color: #337AB7 ;
+    color:white;
+}
+
+table thead .nombre_consultor{
+    border-bottom-color: gray;
+    background-color: #337AB7 ;
+    font-weight: bold;
+    color:white;
+   
+}
+
+table tbody, table tfoot, table tr:not(.nombre_consultor){
+    text-align: right;
+}
+
+
+table tfoot{
+    background-color:  #DEDEDE;
+    font-weight: bold;
+    color:black;
+}
+
+
+#contenedorPerformance{
+    padding-top:1.5rem;
+}
+
+.row{
+    padding-left:2rem;
+    padding-right:2rem;
+}
+
+.row.fechas{
+    margin-top:1rem;
+    margin-left: 4rem;
+    
+}
+
+#contenedorTabs{
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-color: #DDDDDD;
+    border-width: 1px;
+    min-height:50rem;
+}
+
+
+.nav-tabs li a{
+    font-weight: bold;
+}
+
+.top{
+    margin-top:2rem;
+}
+
+
+#moverConsultorDer, #moverConsultorIzq{
+    width:9rem;
+}
+
+#contenedorResultados{
+    width: 100%;
+}
+
+
+#menu-performance{
+    margin-top: 7rem;
+}
+
+
+#cliente{
+    padding:12rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 23px;
+}

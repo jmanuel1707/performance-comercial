@@ -1,0 +1,95 @@
+<div id="contenedorPerformance">
+    <div class="row fechas">
+        Desde:
+        <select class="selectpicker" id="mesInicio">
+            <option value="01" selected>ENE</option>
+            <option value="02">FEB</option>
+            <option value="03">MAR</option>
+            <option value="04">ABR</option>
+            <option value="05">MAY</option>
+            <option value="06">JUN</option>
+            <option value="07">JUL</option>
+            <option value="08">AGO</option>
+            <option value="09">SEP</option>
+            <option value="10">OCT</option>
+            <option value="11">NOV</option>
+            <option value="12">DIC</option>
+        </select>
+        <select class="selectpicker" id="anioInicio">
+            <option value="2004">2004</option>
+            <option value="2005">2005</option>
+            <option value="2006">2006</option>
+            <option value="2007" selected>2007</option>
+            <option value="2008">2008</option>
+            <option value="2009">2009</option>
+        </select>
+    
+        &nbsp;&nbsp;
+        Hasta:
+        <select class="selectpicker" id="mesFin">
+            <option value="01">ENE</option>
+            <option selected value="02">FEB</option>
+            <option value="03">MAR</option>
+            <option value="04">ABR</option>
+            <option value="05">MAY</option>
+            <option value="06">JUN</option>
+            <option value="07">JUL</option>
+            <option value="08">AGO</option>
+            <option value="09">SEP</option>
+            <option value="10">OCT</option>
+            <option value="11">NOV</option>
+            <option value="12">DIC</option>
+        </select>
+        <select class="selectpicker" id="anioFin">
+            <option value="2004">2004</option>
+            <option value="2005">2005</option>
+            <option value="2006">2006</option>
+            <option value="2007" selected>2007</option>
+            <option value="2008">2008</option>
+            <option value="2009">2009</option>
+        </select>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 top">
+            <select class="selectpicker form-control" id="selectTodosConsultores" name="selectTodosConsultores[]" multiple>
+                {{#each datos}}
+                    <option value="{{co_usuario}}"> {{no_usuario}} </option>
+                {{/each }}
+            </select>
+            
+        </div>
+        
+        <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 text-center top">
+            <div id="moverConsultorDer" type="button" class="glyphicon glyphicon-arrow-right btn btn-default"></div>
+            <p></p>
+            <div id="moverConsultorIzq" type="button" class="glyphicon glyphicon-arrow-left btn btn-default"></div>
+        </div>
+        
+        
+        <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 top">
+            <select class="selectpicker form-control" id="selectConsultoresAgregados" name="selectConsultores[]" multiple>
+            </select>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center top">
+            <button type="submit" id="botonReceitasConsultores" class="btn btn-primary">Relatório</button>
+            <button type="submit" id="botonGrafico" class="btn btn-success">Gráfico</button> 
+            <button type="submit" id="botonTorta" class="btn btn-warning">Pizza</button>
+        </div>
+    </div>
+    
+    <hr style=" width: 95%; color: #DDDDDD; height: 1px; background-color:#DDDDDD;" />
+    
+    <div class="row">
+        <div class="col-xs-12">
+            <div id="contenedorResultados">
+                
+                <div id="chart_div"></div>
+    
+            </div>
+        </div>
+    </div>
+</div>
