@@ -87,10 +87,12 @@ $(document).ready(function(){
             
             var data = google.visualization.arrayToDataTable(datos);
             
+            var series = '{"'+ $("#selectConsultoresAgregados option").length +'": {"type": "line", "color":"gray"}}';
+            series = JSON.parse(series);
             var options = {
                 title : 'Performance Comercial',
                 seriesType: 'bars',
-                series: {5: {type: 'line', color:'gray'}}
+                series: series
             };
             
             var chart = new google.visualization.ComboChart(document.getElementById('graficoBarras'));
