@@ -5,6 +5,7 @@ $(document).ready(function(){
     });
     
     window.datosGraficoBarras = [];
+
     
     $("#botonGrafico").click(obtenerDatosGrafico);
     
@@ -82,6 +83,8 @@ $(document).ready(function(){
         google.charts.load('current', {'packages':['corechart']});
         google.charts.setOnLoadCallback(drawVisualization);
         
+        
+         
         function drawVisualization() {
             // Some raw data (not necessarily accurate)
             
@@ -89,9 +92,15 @@ $(document).ready(function(){
             var series = '{"'+ $("#selectConsultoresAgregados option").length +'": {"type": "line", "color":"gray"}}';
             series = JSON.parse(series);
             var options = {
-                title : 'Performance Comercial',
+                title : "Performance Comercial",
                 seriesType: 'bars',
-                series: series
+                series: series,
+                chartArea: {
+                    right: "30%",
+                    top: "15%",
+                    left:"10%",
+                    height: "80%"
+                }
             };
             
             var chart = new google.visualization.ComboChart(document.getElementById('graficoBarras'));
