@@ -101,6 +101,7 @@ $(document).ready(function(){
                     right: "30%",
                     top: "15%",
                     left:"10%",
+                    bottom:'10%',
                     height: "80%"
                 }
             };
