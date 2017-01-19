@@ -86,7 +86,6 @@ $(document).ready(function(){
             // Some raw data (not necessarily accurate)
             
             var data = google.visualization.arrayToDataTable(datos);
-            
             var series = '{"'+ $("#selectConsultoresAgregados option").length +'": {"type": "line", "color":"gray"}}';
             series = JSON.parse(series);
             var options = {
