@@ -9,8 +9,10 @@ $(document).ready(function(){
     
     $("#botonGrafico").click(obtenerDatosGrafico);
     
+    
+    
     function obtenerDatosGrafico(){
-       
+        $("#contenedorResultados").html("<img class='img-responsive center-block' src='/img/loading.gif' style='width: 100px; height:100px' />");
         //Utilizamos la funcion calcularFechas para obtener los meses/año que consultaremos
         var meses = calcularFechas();
         if(!meses){
