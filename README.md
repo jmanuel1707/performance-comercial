@@ -1,6 +1,6 @@
-## Aplicacion de performance comercial.
+# Aplicacion de performance comercial.
 
-# Herramientas utilizadas:
+## Herramientas utilizadas:
 - Node.js con framework express
 - Para el motor de vistas de express se utilizo handlebars.
 - Para consultas AJAX y animaciones en el DOM se utilizó la librería jQuery.
@@ -8,7 +8,8 @@
 - Los gráficos se construyeron haciendo uso de la librería charts de Google.
 
 
-# Se debe tener en cuenta que:
+## Se debe tener en cuenta que:
+- Para ejecutarlo correctamente se debe cambiar la configuración de conexion a base de datos del archivo /controller/consultores.js
 - Aquellos consultores que no esten asociados a alguna factura de la tabla "cao_fatura" tendran como "Receita Liquida" cero (0).
 - En la tabla "cao_salario" solo estan contemplados los salarios de 6 consultores, por lo que el "Custo Fixo" de los demas sera igual a cero (0).
 - Al igual que el punto a, aquellos consultores que no tengan ninguna factura asociada tendran una "comissao" igual a cero (0).
